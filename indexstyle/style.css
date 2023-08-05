@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html{ 
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.content{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #2bd0e6;
+    position: fixed;
+    
+}
+.content li{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.container .logo{
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.content .menu{
+    max-width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-nav.nav-link a {
+    padding: 2rem 1rem 2rem 1rem;
+    color: rgb(22, 1, 34);
+    font-size: 50%;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms;
+    
+    
+}
+
+
+.first-section{
+    height: 160vh;
+    background-image: url(../img/18.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    color: rgb(0, 0, 0);
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.first-section h2 {
+    color:rgb(23, 1, 26);
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(0, 87, 128);
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 4rem;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover{
+    border: 1px solid rgb(27, 0, 27);
+    background-color: transparent;
+    color: rgb(23, 2, 41);
+}
+
+.btn{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+h4 span{
+    color: rgb(255, 217, 0);
+    font-size:40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form [type="submit"]{
+    height: 50px;
+    width: 70px;
+    background-color: rgb(0, 87, 128);
+    color: white;
+    font-weight: bold;
+
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}    
+form input{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
+.about-us {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-about p{
+    line-height: 20px;
+    max-width: 500px;
+}
+.about-us img {
+    max-width: 400px;
+    margin: auto;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+
+}
+main{
+   display: flex;
+   flex-direction:column;
+   margin-top: 60px;
+   font-size: 80%;
+}
+.main h2{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+
+
+.main p {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 800px;
+}
+
+
+
+.destinations{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.8);
+}
+.destinations h2{
+    font-size: 5rem;
+    color: yellowgreen;
+    text-transform: uppercase;
+}
+
+.itens-destino{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,350px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-destino .infor {
+    background-color: rgb(221,221,221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-destino .infor h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-destino .infor h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-destino .infor h4 span{
+    font-size: 1.2rem;
+    color: #585858;
+    margin-left: 1.5 rem;
+    text-decoration: underline;
+}
+
+.itens-destino div{
+    background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px;
+
+}
+
+
+.itens-destino img {
+    width: 100%;
+    height: 400px;
+}
+
+.itens-destino .infor .comprar{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: rgb(92, 68, 145);
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.itens-destino .infor .comprar:hover{
+     background-color: #5e5252;
+     color:crimson
+}
+
+
+
+.contacts{
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: yellowgreen;
+    padding-bottom: 4rem;
+}
+
+.contacts h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    font-family: system-u BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contacts-secao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contacts-secao li {
+    margin-right: 1rem;
+}
+
+.contacts-secao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+
+}
+
+.contacts-secao div:hover{
+    color: crimson;
+}
+
+.footer{
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media ( width-max:1200px) {
+    .main {display: max-block;
+
+    .content {
+        flex-direction: column;
+        justify-content: center
+
+
+    }
+
+    
+    .container {
+        flex-direction: column;
+        justify-content: center;
+
+ 
+    }
+
+    .about-us img{
+        width: 600px;
+        margin-left:-2px;}
+
+}}
